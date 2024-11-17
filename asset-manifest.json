@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jp4everyone/static/css/main.bd2b0871.css",
-    "main.js": "/jp4everyone/static/js/main.55eb72f4.js",
+    "main.js": "/jp4everyone/static/js/main.82e504b4.js",
     "static/js/554.e71f970b.chunk.js": "/jp4everyone/static/js/554.e71f970b.chunk.js",
     "static/media/1-3-3.svg": "/jp4everyone/static/media/1-3-3.9d661c3a76339a99a7f0e64008b51cb4.svg",
     "static/media/1-1-3.svg": "/jp4everyone/static/media/1-1-3.244d7d910c987df64b994c580706ff97.svg",
@@ -87,11 +87,11 @@
     "static/media/1-3-4.svg": "/jp4everyone/static/media/1-3-4.9948364eb9af991e3da657ad377febda.svg",
     "index.html": "/jp4everyone/index.html",
     "main.bd2b0871.css.map": "/jp4everyone/static/css/main.bd2b0871.css.map",
-    "main.55eb72f4.js.map": "/jp4everyone/static/js/main.55eb72f4.js.map",
+    "main.82e504b4.js.map": "/jp4everyone/static/js/main.82e504b4.js.map",
     "554.e71f970b.chunk.js.map": "/jp4everyone/static/js/554.e71f970b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd2b0871.css",
-    "static/js/main.55eb72f4.js"
+    "static/js/main.82e504b4.js"
   ]
 }
