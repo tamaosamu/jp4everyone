@@ -1,0 +1,37 @@
+kind: pipeline
+type: docker
+name: jp4everyone
+
+steps:
+  - name: build image
+    image: docker
+    failure: ignore
+    volumes:
+      - name: sock
+        path: /var/run/docker.sock
+    commands:
+      - docker build -t jp4everyone:v0.1.0 -f Dockerfile .
+      - docker image prune -f --filter "dangling=true"
+  
+  - name: deploy
+    image: docker
+    failure: ignore
+    volumes:
+      - name: sock
+        path: /var/run/docker.sock
+    commands:
+      - docker run -d --name web-jp4everyone -p 8080:80 jp4everyone:v0.1.0
+
+volumes:
+  - name: sock
+    host:
+      path: /var/run/docker.sock
+
+trigger:
+  branch: 
+    - master
+  event:
+    - push
+  status:
+    - success
+    - failure
