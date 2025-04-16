@@ -32,6 +32,7 @@ trigger:
     - master
   event:
     - push
+    - manual
   status:
     - success
     - failure
